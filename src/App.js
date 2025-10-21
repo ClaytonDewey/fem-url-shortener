@@ -1,8 +1,17 @@
-import './App.css';
+import { Icon } from './svg';
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
+      <Icon name='logo' />
+      <Icon name='facebook' />
+      <Icon name='instagram' />
+      <Icon name='pinterest' />
+      <Icon name='twitter' />
+      <Icon name='graph' />
+      <Icon name='guage' />
+      <Icon name='pens' />
+      <Icon name='illustration' />
       Features
       <br />
       Pricing
@@ -119,6 +128,5 @@ function App() {
       </footer>
     </div>
   );
-}
-
+};
 export default App;
