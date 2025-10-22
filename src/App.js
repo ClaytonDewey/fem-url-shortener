@@ -1,17 +1,9 @@
-import { Icon } from './svg';
+import { Header } from './components';
 
 const App = () => {
   return (
-    <div className='App'>
-      <Icon name='logo' />
-      <Icon name='facebook' />
-      <Icon name='instagram' />
-      <Icon name='pinterest' />
-      <Icon name='twitter' />
-      <Icon name='graph' />
-      <Icon name='guage' />
-      <Icon name='pens' />
-      <Icon name='illustration' />
+    <>
+      <Header />
       Features
       <br />
       Pricing
@@ -126,7 +118,7 @@ const App = () => {
         </a>
         .
       </footer>
-    </div>
+    </>
   );
 };
 export default App;

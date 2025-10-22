@@ -1,0 +1,98 @@
+@use '../util' as *;
+
+.navbar {
+  background: transparent;
+  &__toggle {
+    @include flexbox;
+    @include flex-direction(column);
+    gap: rem(6);
+    cursor: pointer;
+    background: transparent;
+
+    border: none;
+
+    .icon-bar {
+      width: rem(24);
+      height: rem(3);
+      background-color: var(--clr-gray-500);
+    }
+  }
+
+  &__wrapper {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+    ul {
+      list-style-type: none;
+      @include flexbox;
+      @include flex-direction(column);
+      @include align-items(center);
+      gap: var(--sp-32);
+
+      li {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    a {
+      color: var(--clr-white);
+      font: var(--text-preset-6-bold);
+      text-decoration: none;
+    }
+
+    &.open {
+      width: auto;
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      background-color: var(--clr-purple-950);
+      border-radius: rem(10);
+      position: absolute;
+      margin: var(--sp-24);
+      padding: var(--sp-32) var(--sp-16);
+      right: 0;
+      left: 0;
+
+      .links {
+        border-bottom: 1px solid var(--clr-gray-500);
+        padding-bottom: var(--sp-32);
+        margin-bottom: var(--sp-32);
+      }
+
+      @include breakpoint(medium) {
+        padding: rem(37) rem(52);
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    @include justify-content(space-between);
+    width: 100%;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__wrapper {
+      @include flexbox;
+      @include justify-content(space-between);
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+      width: 100%;
+
+      ul {
+        @include flex-direction(row);
+
+        a {
+          color: var(--clr-gray-500);
+        }
+      }
+    }
+  }
+}
