@@ -74,4 +74,7 @@
     var(--ff-primary);
   --text-preset-7: normal normal var(--fw-med) var(--fs-small) / 175%
     var(--ff-primary);
+
+  // Transition
+  --transition: all 0.3s ease-in-out;
 }

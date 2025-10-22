@@ -10,11 +10,4 @@
   font-size: inherit;
   transition: all 0.2s ease-in-out;
   border-radius: rem(10);
-
-  &-pill {
-    height: rem(48);
-    width: 100%;
-    background-color: var(--clr-blue-400);
-    border-radius: rem(999);
-  }
 }

@@ -29,10 +29,8 @@ const Navbar = () => {
           <li>
             <a href='/'>Login</a>
           </li>
-          <li>
-            <a href='/' className='btn btn-pill'>
-              Sign Up
-            </a>
+          <li className='signup'>
+            <a href='/'>Sign Up</a>
           </li>
         </ul>
       </div>
