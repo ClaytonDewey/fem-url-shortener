@@ -4,18 +4,11 @@
   @include flexbox;
   @include justify-content(space-between);
   @include align-items(center);
+  margin: auto;
   gap: var(--sp-48);
   position: relative;
   padding: var(--sp-40) var(--sp-24);
   max-width: rem(1275);
-
-  &__logo {
-    width: rem(200);
-
-    svg {
-      width: 100%;
-    }
-  }
 
   @include breakpoint(large) {
     padding-block-start: rem(48);
