@@ -1,5 +1,3 @@
-import { Icon } from '../svg';
-
 const Hero = () => {
   return (
     <section className='hero container'>
