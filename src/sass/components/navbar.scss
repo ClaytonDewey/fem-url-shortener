@@ -16,6 +16,25 @@
       height: rem(3);
       background-color: var(--clr-gray-500);
     }
+
+    .top-bar,
+    .bottom-bar {
+      transform: rotate(0);
+    }
+
+    &.open {
+      .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+      }
+      .middle-bar {
+        opacity: 0;
+      }
+      .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 0% 0%;
+      }
+    }
   }
 
   &__wrapper {
