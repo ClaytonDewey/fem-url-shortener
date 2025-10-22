@@ -1,9 +1,10 @@
-import { Header } from './components';
+import { Header, Hero } from './components';
 
 const App = () => {
   return (
     <>
       <Header />
+      <Hero />
       Features
       <br />
       Pricing

@@ -93,6 +93,7 @@
       padding: var(--sp-32) var(--sp-16);
       right: 0;
       left: 0;
+      z-index: 9999;
 
       .links {
         border-bottom: 1px solid var(--clr-gray-500);
