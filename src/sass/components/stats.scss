@@ -24,6 +24,7 @@
     @include breakpoint(medium) {
       max-width: rem(540);
       margin-inline: auto;
+      margin-bottom: var(--sp-40);
 
       h2 {
         font: var(--text-preset-2);

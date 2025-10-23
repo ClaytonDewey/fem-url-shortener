@@ -20,6 +20,31 @@
       width: rem(8);
       background-color: var(--clr-blue-400);
     }
+
+    @include breakpoint(large) {
+      @include flex-direction(row);
+      gap: var(--sp-32);
+      max-width: rem(1110);
+      height: rem(399);
+      margin: auto;
+      padding-inline: 0;
+
+      &::before {
+        left: 0;
+        height: rem(8);
+        width: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      > div:first-child {
+        align-self: flex-start;
+      }
+
+      > div:last-child {
+        align-self: flex-end;
+      }
+    }
   }
 
   @include flexbox;
@@ -28,7 +53,6 @@
   text-align: center;
   position: relative;
   z-index: 1;
-  max-width: rem(350);
 
   &__body {
     background-color: var(--clr-white);
@@ -60,6 +84,14 @@
 
     svg {
       fill: var(--clr-blue-400);
+    }
+  }
+
+  @include breakpoint(medium) {
+    width: rem(350);
+
+    &__icon {
+      left: var(--sp-32);
     }
   }
 }
