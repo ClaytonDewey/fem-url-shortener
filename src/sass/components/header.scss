@@ -7,7 +7,7 @@
   margin: auto;
   gap: var(--sp-48);
   position: relative;
-  padding: var(--sp-40) var(--sp-24) var(--sp-24);
+  padding: var(--sp-40) 0 var(--sp-24);
 
   @include breakpoint(medium) {
     padding-block-end: rem(95);

@@ -5,7 +5,7 @@
   @include flex-direction(column);
   @include align-items(center);
   position: relative;
-  padding: rem(377) var(--sp-24) var(--sp-24);
+  padding: rem(377) 0 var(--sp-24);
 
   &::before {
     content: '';
