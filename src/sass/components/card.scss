@@ -1,0 +1,64 @@
+@use '../util' as *;
+
+.card {
+  &__container {
+    position: relative;
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    gap: rem(94);
+    padding-inline: var(--sp-24);
+    padding-block-start: rem(44);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: rem(8);
+      background-color: var(--clr-blue-400);
+    }
+  }
+
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  &__body {
+    background-color: var(--clr-white);
+    border-radius: rem(5);
+    padding: rem(76) var(--sp-24) var(--sp-32);
+
+    h3 {
+      font: var(--text-preset-4-bold);
+      color: var(--clr-gray-900);
+      margin-block-end: var(--sp-16);
+    }
+
+    p {
+      font: var(--text-preset-7);
+      color: var(--clr-gray-500);
+    }
+  }
+
+  &__icon {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+    position: absolute;
+    top: rem(-44);
+    background-color: var(--clr-purple-950);
+    height: rem(88);
+    width: rem(88);
+    border-radius: 100%;
+
+    svg {
+      fill: var(--clr-blue-400);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+.stats {
+  &__wrapper {
+    background-color: var(--clr-purple-50);
+    padding-block-end: rem(88);
+  }
+
+  &__header {
+    text-align: center;
+    h2 {
+      font: var(--text-preset-3);
+      color: var(--clr-gray-900);
+    }
+
+    p {
+      font: var(--text-preset-7);
+      color: var(--clr-gray-500);
+    }
+  }
+}
