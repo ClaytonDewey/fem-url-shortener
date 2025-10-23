@@ -3,7 +3,7 @@
 .form {
   padding: var(--sp-24);
   border-radius: rem(10);
-  background-color: var(--clr-gray-900);
+  background-color: var(--clr-purple-950);
   background-image: url(../../images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,5 +41,30 @@
     height: var(--sp-48);
     width: 100%;
     font: var(--text-preset-6-bold);
+  }
+
+  @include breakpoint(medium) {
+    background-image: url(../../images/bg-shorten-desktop.svg);
+    padding: rem(56) rem(64) rem(50);
+    gap: var(--sp-24);
+    height: rem(168);
+
+    form {
+      @include flex-direction(row);
+    }
+
+    .btn,
+    &-control {
+      height: rem(62);
+    }
+
+    .btn {
+      width: rem(188);
+    }
+
+    &-control {
+      border-radius: rem(10);
+      font: var(--text-preset-5);
+    }
   }
 }
