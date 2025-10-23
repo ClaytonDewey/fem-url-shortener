@@ -11,7 +11,8 @@
   transition: var(--transition);
   border-radius: rem(10);
 
-  &-primary {
+  &-primary,
+  &-cta {
     background-color: var(--clr-blue-400);
     color: var(--clr-white);
     border-radius: rem(5);
