@@ -1,0 +1,45 @@
+@use '../util' as *;
+
+.form {
+  padding: var(--sp-24);
+  border-radius: rem(10);
+  background-color: var(--clr-gray-900);
+  background-image: url(../../images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  form {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    gap: var(--sp-16);
+  }
+
+  &-group {
+    width: 100%;
+  }
+
+  &-control {
+    @include flexbox;
+    @include align-items(center);
+    padding-inline: var(--sp-16);
+    background-color: var(--clr-white);
+    border-radius: rem(5);
+    width: 100%;
+    height: var(--sp-48);
+    font: var(--text-preset-7);
+    border: 1px solid var(--clr-gray-500);
+    color: var(--clr-gray-500);
+  }
+
+  .btn {
+    background-color: var(--clr-blue-400);
+    color: var(--clr-white);
+    border: none;
+    height: var(--sp-48);
+    width: 100%;
+    font: var(--text-preset-6-bold);
+  }
+}
