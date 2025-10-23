@@ -28,6 +28,7 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  max-width: rem(350);
 
   &__body {
     background-color: var(--clr-white);
