@@ -49,6 +49,16 @@
   --fw-med: 500;
   --fw-bold: 700;
 
+  // Gradient
+
+  --gradient: linear-gradient(
+    0deg,
+    rgba(239, 241, 247, 1) 0%,
+    rgba(239, 241, 247, 1) 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
   // Text-presets
   --text-preset-1: normal normal var(--fw-bold) var(--fs-4xlg) / 115%
     var(--ff-primary);

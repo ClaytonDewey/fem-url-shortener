@@ -9,20 +9,24 @@ const Form = () => {
     setUrl(e.target.value);
   };
   return (
-    <div className='form'>
-      <form>
-        <Input
-          label='Link to shorten'
-          placeholder='Shorten a link here...'
-          name='url'
-          value={url}
-          onChange={handleChange}
-        />
-        <Button className='btn' type='submit'>
-          Shorten It!
-        </Button>
-      </form>
-    </div>
+    <section className='form__wrapper'>
+      <div className='container'>
+        <div className='form'>
+          <form>
+            <Input
+              label='Link to shorten'
+              placeholder='Shorten a link here...'
+              name='url'
+              value={url}
+              onChange={handleChange}
+            />
+            <Button className='btn' type='submit'>
+              Shorten It!
+            </Button>
+          </form>
+        </div>
+      </div>
+    </section>
   );
 };
 export default Form;

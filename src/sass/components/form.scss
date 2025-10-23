@@ -1,6 +1,12 @@
 @use '../util' as *;
 
 .form {
+  &__wrapper {
+    padding-block: rem(75);
+    background-color: var(--clr-white);
+    background: var(--gradient);
+  }
+
   padding: var(--sp-24);
   border-radius: rem(10);
   background-color: var(--clr-purple-950);
@@ -46,11 +52,11 @@
   @include breakpoint(medium) {
     background-image: url(../../images/bg-shorten-desktop.svg);
     padding: rem(56) rem(64) rem(50);
-    gap: var(--sp-24);
     height: rem(168);
 
     form {
       @include flex-direction(row);
+      gap: var(--sp-24);
     }
 
     .btn,

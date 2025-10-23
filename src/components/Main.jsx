@@ -4,7 +4,7 @@ import Stats from './Stats';
 
 const Main = () => {
   return (
-    <main className='container'>
+    <main>
       {' '}
       <Form />
       <Stats />

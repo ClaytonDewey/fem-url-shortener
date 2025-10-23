@@ -30,7 +30,7 @@
     margin: 0;
     margin-block-end: var(--sp-16);
     font: var(--text-preset-2);
-    letter-spacing: rem(-2);
+    letter-spacing: rem(-1);
     color: var(--clr-gray-900);
   }
 
@@ -61,6 +61,7 @@
 
     h1 {
       font: var(--text-preset-1);
+      letter-spacing: rem(-2);
     }
 
     p {
