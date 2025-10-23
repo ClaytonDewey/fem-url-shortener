@@ -25,6 +25,17 @@
 
   &-group {
     width: 100%;
+    position: relative;
+
+    .invalid-feedback {
+      font: var(--text-preset-7-italic);
+      color: var(--clr-red-400);
+      position: absolute;
+    }
+
+    .is-invalid {
+      border: 3px solid var(--clr-red-400);
+    }
   }
 
   &-control {
