@@ -9,6 +9,10 @@
   position: relative;
   padding: var(--sp-40) 0 var(--sp-24);
 
+  svg {
+    fill: var(--clr-gray-900);
+  }
+
   @include breakpoint(medium) {
     padding-block-end: rem(95);
   }
