@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className='hero container'>
+    <section className='hero '>
       <div className='hero__body'>
         <h1>More than just shorter links</h1>
         <p>
