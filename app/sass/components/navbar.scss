@@ -49,6 +49,7 @@
       @include flex-direction(column);
       @include align-items(center);
       gap: var(--sp-32);
+      height: 100%;
 
       li {
         width: 100%;

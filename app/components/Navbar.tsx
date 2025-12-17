@@ -25,25 +25,29 @@ const Navbar = () => {
         <span className='icon-bar bottom-bar'></span>
       </Button>
       <div className={`navbar__wrapper ${isOpen ? 'open' : ''}`}>
-        <ul className='links' aria-label='Main navigation links'>
-          <li>
-            <Link href='/'>Features</Link>
-          </li>
-          <li>
-            <Link href='/'>Pricing</Link>
-          </li>
-          <li>
-            <Link href='/'>Resources</Link>
-          </li>
-        </ul>
-        <ul className='account' aria-label='Account links'>
-          <li>
-            <Link href='/'>Login</Link>
-          </li>
-          <li className='signup'>
-            <Link href='/'>Sign Up</Link>
-          </li>
-        </ul>
+        <nav aria-label='Main navigation links'>
+          <ul className='links'>
+            <li>
+              <Link href='/'>Features</Link>
+            </li>
+            <li>
+              <Link href='/'>Pricing</Link>
+            </li>
+            <li>
+              <Link href='/'>Resources</Link>
+            </li>
+          </ul>
+        </nav>
+        <nav aria-label='Account links'>
+          <ul className='account'>
+            <li>
+              <Link href='/'>Login</Link>
+            </li>
+            <li className='signup'>
+              <Link href='/'>Sign Up</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </nav>
   );
