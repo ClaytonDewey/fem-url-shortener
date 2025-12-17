@@ -1,4 +1,5 @@
 import { Icon } from '../svg';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -14,13 +15,13 @@ const Footer = () => {
               <h2>Features</h2>
               <ul>
                 <li>
-                  <a href='/'>Link Shortening</a>
+                  <Link href='/'>Link Shortening</Link>
                 </li>
                 <li>
-                  <a href='/'>Branded Links</a>
+                  <Link href='/'>Branded Links</Link>
                 </li>
                 <li>
-                  <a href='/'>Analytics</a>
+                  <Link href='/'>Analytics</Link>
                 </li>
               </ul>
             </div>
@@ -28,13 +29,13 @@ const Footer = () => {
               <h2>Resources</h2>
               <ul>
                 <li>
-                  <a href='/'>Blog</a>
+                  <Link href='/'>Blog</Link>
                 </li>
                 <li>
-                  <a href='/'>Developers</a>
+                  <Link href='/'>Developers</Link>
                 </li>
                 <li>
-                  <a href='/'>Support</a>
+                  <Link href='/'>Support</Link>
                 </li>
               </ul>
             </div>
@@ -42,16 +43,16 @@ const Footer = () => {
               <h2>Company</h2>
               <ul>
                 <li>
-                  <a href='/'>About</a>
+                  <Link href='/'>About</Link>
                 </li>
                 <li>
-                  <a href='/'>Our Team</a>
+                  <Link href='/'>Our Team</Link>
                 </li>
                 <li>
-                  <a href='/'>Careers</a>
+                  <Link href='/'>Careers</Link>
                 </li>
                 <li>
-                  <a href='/'>Contact</a>
+                  <Link href='/'>Contact</Link>
                 </li>
               </ul>
             </div>

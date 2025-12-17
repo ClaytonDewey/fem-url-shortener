@@ -1,12 +1,14 @@
+import Link from 'next/link';
+
 const Cta = () => {
   return (
     <div className='cta'>
       <div className='container'>
         <h2>Boost your links today</h2>
 
-        <a href='/' className='btn btn-cta btn-pill'>
+        <Link href='/' className='btn btn-cta btn-pill'>
           Get Started
-        </a>
+        </Link>
       </div>
     </div>
   );
