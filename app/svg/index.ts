@@ -1,0 +1,10 @@
+export { default as IconFacebook } from './facebook';
+export { default as IconGraph } from './graph';
+export { default as IconGuage } from './guage';
+export { default as Icon } from './icon';
+export { default as IconIllustration } from './illustration';
+export { default as IconInstagram } from './instagram';
+export { default as IconLogo } from './logo';
+export { default as IconPens } from './pens';
+export { default as IconPinterest } from './pinterest';
+export { default as IconTwitter } from './twitter';

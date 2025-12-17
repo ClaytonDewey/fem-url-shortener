@@ -1,0 +1,32 @@
+@use '../util' as *;
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: none;
+  text-decoration: none;
+  font-size: inherit;
+  transition: var(--transition);
+  border: none;
+  border-radius: rem(10);
+
+  &-primary,
+  &-cta {
+    background-color: var(--clr-blue-400);
+    color: var(--clr-white);
+    border-radius: rem(5);
+
+    &:hover {
+      background-color: var(--clr-blue-300);
+    }
+  }
+
+  &-pill {
+    font: var(--text-preset-5-bold);
+    border-radius: rem(999);
+    width: rem(197);
+    height: rem(62);
+  }
+}

@@ -1,0 +1,23 @@
+@use '../util' as *;
+
+.header {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+  margin: auto;
+  gap: var(--sp-48);
+  position: relative;
+  padding: var(--sp-40) 0 var(--sp-24);
+
+  svg {
+    fill: var(--clr-gray-900);
+  }
+
+  @include breakpoint(medium) {
+    padding-block-end: rem(95);
+  }
+
+  @include breakpoint(large) {
+    padding-block-start: rem(48);
+  }
+}

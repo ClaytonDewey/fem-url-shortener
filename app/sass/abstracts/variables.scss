@@ -1,0 +1,90 @@
+@use '../util' as *;
+
+:root {
+  // Base
+  --clr-black: #000;
+  --clr-white: #fff;
+
+  // Grays
+  --clr-gray-950: #232127;
+  --clr-gray-900: #34313d;
+  --clr-gray-500: #9e9aa8;
+  --clr-gray-400: #bfbfbf;
+
+  // Colors
+  --clr-purple-950: #3a3054;
+  --clr-purple-900: #4b3f6b;
+  --clr-purple-50: #eff1f7;
+
+  --clr-blue-400: #2bd0d0;
+  --clr-blue-300: #9ae3e3;
+
+  --clr-red-400: #f46363;
+
+  // Spacing
+  --sp-8: #{rem(8)};
+  --sp-16: #{rem(16)};
+  --sp-24: #{rem(24)};
+  --sp-32: #{rem(32)};
+  --sp-40: #{rem(40)};
+  --sp-48: #{rem(48)};
+  --sp-56: #{rem(56)};
+  --sp-72: #{rem(72)};
+  --sp-80: #{rem(80)};
+
+  // Font-family
+  --ff-primary: 'Poppins', sans-serif;
+
+  // Font-sizes
+  --fs-4xlg: #{rem(80)};
+  --fs-3xlg: #{rem(40)};
+  --fs-2xlg: #{rem(28)};
+  --fs-xlg: #{rem(22)};
+  --fs-lg: #{rem(20)};
+  --fs-med: #{rem(18)};
+  --fs-small: #{rem(15)};
+  --fs-xsmall: #{rem(11)};
+
+  // Font-weights
+  --fw-med: 500;
+  --fw-bold: 700;
+
+  // Gradient
+
+  --gradient: linear-gradient(
+    0deg,
+    rgba(239, 241, 247, 1) 0%,
+    rgba(239, 241, 247, 1) 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  // Text-presets
+  --text-preset-1: normal normal var(--fw-bold) var(--fs-4xlg) / 115%
+    var(--ff-primary);
+  --text-preset-2: normal normal var(--fw-bold) var(--fs-3xlg) / 115%
+    var(--ff-primary);
+  --text-preset-3: normal normal var(--fw-bold) var(--fs-2xlg) / 170%
+    var(--ff-primary);
+  --text-preset-4-bold: normal normal var(--fw-bold) var(--fs-xlg) / 150%
+    var(--ff-primary);
+  --text-preset-4: normal normal var(--fw-med) var(--fs-xlg) / 165%
+    var(--ff-primary);
+  --text-preset-5-bold: normal normal var(--fw-bold) var(--fs-lg) / 150%
+    var(--ff-primary);
+  --text-preset-5: normal normal var(--fw-med) var(--fs-lg) / 150%
+    var(--ff-primary);
+  --text-preset-6-bold: normal normal var(--fw-bold) var(--fs-med) / 150%
+    var(--ff-primary);
+  --text-preset-6: normal normal var(--fw-med) var(--fs-med) / 175%
+    var(--ff-primary);
+  --text-preset-7-bold: normal normal var(--fw-bold) var(--fs-small) / 150%
+    var(--ff-primary);
+  --text-preset-7-italic: italic normal var(--fw-med) var(--fs-small) / 120%
+    var(--ff-primary);
+  --text-preset-7: normal normal var(--fw-med) var(--fs-small) / 175%
+    var(--ff-primary);
+
+  // Transition
+  --transition: all 0.3s ease-in-out;
+}

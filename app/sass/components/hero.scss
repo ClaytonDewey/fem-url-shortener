@@ -1,0 +1,90 @@
+@use '../util' as *;
+
+.hero {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  position: relative;
+  padding: rem(377) var(--sp-24) 0;
+  width: 100%;
+  max-width: rem(1110);
+  margin: auto;
+  overflow-x: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: rem(337);
+    width: rem(511);
+    top: 0;
+    left: var(--sp-24);
+  }
+
+  &__body {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    margin-block-end: var(--sp-16);
+    font: var(--text-preset-2);
+    letter-spacing: rem(-1);
+    color: var(--clr-gray-900);
+  }
+
+  p {
+    margin: 0;
+    margin-block-end: var(--sp-32);
+    font: var(--text-preset-6);
+    color: var(--clr-gray-500);
+  }
+
+  a {
+    margin: auto;
+  }
+
+  @include breakpoint(medium) {
+    padding-block-start: rem(538);
+
+    &::before {
+      height: rem(482);
+      width: rem(733);
+      left: rem(145);
+    }
+
+    &__body {
+      width: 100%;
+      max-width: rem(565);
+    }
+
+    h1 {
+      font: var(--text-preset-1);
+      letter-spacing: rem(-2);
+    }
+
+    p {
+      font: var(--text-preset-4);
+    }
+  }
+
+  @include breakpoint(large) {
+    @include flex-direction(row);
+    padding-block-start: 0;
+    height: rem(482);
+
+    &::before {
+      left: rem(688);
+    }
+
+    &__body {
+      text-align: left;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+}

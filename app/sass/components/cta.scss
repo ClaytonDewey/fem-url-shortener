@@ -1,0 +1,36 @@
+@use '../util' as *;
+
+.cta {
+  @include flexbox;
+  @include justify-content(center);
+  background-color: var(--clr-purple-950);
+  background-image: url(../../images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: rem(250);
+  color: var(--clr-white);
+
+  .container {
+    @include flexbox;
+    @include flex-direction(column);
+    gap: var(--sp-24);
+  }
+
+  h2 {
+    font: var(--text-preset-3);
+    text-align: center;
+  }
+
+  .btn {
+    margin: auto;
+  }
+
+  @include breakpoint(medium) {
+    background-image: url(../../images/bg-boost-desktop.svg);
+
+    h2 {
+      font: var(--text-preset-2);
+    }
+  }
+}
