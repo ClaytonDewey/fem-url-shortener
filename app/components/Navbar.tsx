@@ -44,7 +44,9 @@ const Navbar = () => {
               <Link href='/'>Login</Link>
             </li>
             <li className='signup'>
-              <Link href='/'>Sign Up</Link>
+              <Link href='/' className='btn btn-signup'>
+                Sign Up
+              </Link>
             </li>
           </ul>
         </nav>

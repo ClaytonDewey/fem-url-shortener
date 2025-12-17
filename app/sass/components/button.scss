@@ -15,11 +15,45 @@
   &-primary,
   &-cta {
     background-color: var(--clr-blue-400);
-    color: var(--clr-white);
+    font: var(--text-preset-7-bold);
+    color: var(--clr-btn-text);
     border-radius: rem(5);
 
     &:hover {
       background-color: var(--clr-blue-300);
+    }
+  }
+
+  &-signup {
+    height: rem(48);
+    width: auto;
+    font: var(--text-preset-6-bold);
+    background-color: var(--clr-blue-400);
+    color: var(--clr-btn-text);
+    border-radius: rem(999);
+    transition: var(--transition);
+
+    &:hover {
+      background-color: var(--clr-blue-300);
+    }
+
+    @include breakpoint(large) {
+      font: var(--text-preset-7-bold);
+    }
+  }
+
+  &-submit {
+    background-color: var(--clr-blue-400);
+    color: var(--clr-btn-text);
+    border: none;
+    height: var(--sp-48);
+    width: 100%;
+    font: var(--text-preset-6-bold);
+
+    @include breakpoint(medium) {
+      width: rem(188);
+      flex-shrink: 0;
+      font: var(--text-preset-5-bold);
     }
   }
 

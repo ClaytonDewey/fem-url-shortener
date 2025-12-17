@@ -57,26 +57,11 @@
 
         &.signup {
           @include flex-shrink(0);
-          a {
-            @include flexbox;
-            @include justify-content(center);
-            @include align-items(center);
-            height: rem(48);
-            width: auto;
-            background-color: var(--clr-blue-400);
-            color: var(--clr-white);
-            border-radius: rem(999);
-            transition: var(--transition);
-
-            &:hover {
-              background-color: var(--clr-blue-300);
-            }
-          }
         }
       }
     }
 
-    a {
+    a:not(.btn) {
       color: var(--clr-white);
       font: var(--text-preset-6-bold);
       text-decoration: none;
@@ -137,7 +122,7 @@
           }
         }
 
-        a {
+        a:not(.btn) {
           color: var(--clr-gray-500);
           font: var(--text-preset-7-bold);
           transition: var(--transition);

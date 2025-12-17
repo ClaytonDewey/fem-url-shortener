@@ -103,7 +103,10 @@ const Form = () => {
               error={error}
               onChange={handleChange}
             />
-            <Button className='btn' type='submit' disabled={isLoading}>
+            <Button
+              className='btn btn-submit'
+              type='submit'
+              disabled={isLoading}>
               {isLoading ? 'Shortening...' : 'Shorten It!'}
             </Button>
           </form>
@@ -130,6 +133,8 @@ const Form = () => {
 
             <Button
               type='button'
+              aria-hidden={!shortUrl}
+              tabIndex={!shortUrl ? -1 : 0}
               className={`btn btn-primary ${isCopied ? 'dark' : ''}`}
               onClick={handleClick}>
               {isCopied ? 'Copied!' : 'Copy'}

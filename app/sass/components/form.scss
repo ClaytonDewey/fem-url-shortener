@@ -62,15 +62,6 @@
     }
   }
 
-  .btn {
-    background-color: var(--clr-blue-400);
-    color: var(--clr-white);
-    border: none;
-    height: var(--sp-48);
-    width: 100%;
-    font: var(--text-preset-6-bold);
-  }
-
   @include breakpoint(medium) {
     background-image: url(../../images/bg-shorten-desktop.svg);
     padding: rem(56) rem(64) rem(50);
@@ -88,12 +79,6 @@
     .btn,
     &-control {
       height: rem(62);
-    }
-
-    .btn {
-      width: rem(188);
-      flex-shrink: 0;
-      font: var(--text-preset-5-bold);
     }
 
     &-control {
@@ -156,7 +141,7 @@
 
   .link {
     display: inline-block;
-    color: var(--clr-blue-400);
+    color: var(--clr-link);
     text-decoration: none;
     margin-block-end: rem(16);
   }
@@ -164,7 +149,6 @@
   .btn {
     height: rem(40);
     width: 100%;
-    font: var(--text-preset-6);
 
     &.dark {
       background-color: var(--clr-purple-950);
@@ -200,7 +184,6 @@
 
       .btn {
         width: rem(103);
-        font: var(--text-preset-7);
       }
     }
   }
