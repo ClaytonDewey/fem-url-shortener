@@ -1,3 +1,10 @@
+import React from 'react';
+
+type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
+  label?: string;
+  error?: string;
+};
+
 const Input = ({
   label,
   type = 'text',
@@ -7,7 +14,7 @@ const Input = ({
   placeholder,
   error,
   ...rest
-}) => {
+}: InputProps) => {
   return (
     <div className='form-group'>
       {label && (
