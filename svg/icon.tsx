@@ -1,7 +1,7 @@
 import {
   IconFacebook,
+  IconGauge,
   IconGraph,
-  IconGuage,
   IconIllustration,
   IconInstagram,
   IconLogo,
@@ -16,8 +16,8 @@ const Icon = ({ name }: { name: string }) => {
       return <IconFacebook />;
     case 'graph':
       return <IconGraph />;
-    case 'guage':
-      return <IconGuage />;
+    case 'gauge':
+      return <IconGauge />;
     case 'illustration':
       return <IconIllustration />;
     case 'instagram':

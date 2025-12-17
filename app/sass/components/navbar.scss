@@ -97,8 +97,8 @@
 
       .links {
         border-bottom: 1px solid var(--clr-gray-500);
-        padding-bottom: var(--sp-32);
-        margin-bottom: var(--sp-32);
+        padding-block-end: var(--sp-32);
+        margin-block-end: var(--sp-32);
       }
 
       @include breakpoint(medium) {

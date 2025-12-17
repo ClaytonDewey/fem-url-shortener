@@ -5,4 +5,12 @@
   max-width: rem(1110);
   padding-inline: var(--sp-24);
   margin: auto;
+
+  @include breakpoint(medium) {
+    padding-inline: var(--sp-32);
+  }
+
+  @include breakpoint(large) {
+    padding-inline: 0;
+  }
 }

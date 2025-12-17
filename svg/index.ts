@@ -1,6 +1,6 @@
 export { default as IconFacebook } from './facebook';
 export { default as IconGraph } from './graph';
-export { default as IconGuage } from './guage';
+export { default as IconGauge } from './gauge';
 export { default as Icon } from './icon';
 export { default as IconIllustration } from './illustration';
 export { default as IconInstagram } from './instagram';

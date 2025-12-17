@@ -9,8 +9,18 @@
   position: relative;
   padding: var(--sp-40) 0 var(--sp-24);
 
-  svg {
-    fill: var(--clr-gray-900);
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    height: rem(39);
+    width: rem(120.04);
+    flex-shrink: 0;
+
+    svg {
+      fill: var(--clr-gray-900);
+      height: rem(32.67);
+      width: rem(120.04);
+    }
   }
 
   @include breakpoint(medium) {
@@ -19,5 +29,6 @@
 
   @include breakpoint(large) {
     padding-block-start: rem(48);
+    padding-block-end: rem(72);
   }
 }

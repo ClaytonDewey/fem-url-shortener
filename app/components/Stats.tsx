@@ -30,7 +30,7 @@ const Stats = () => {
 
         <div className='card'>
           <div className='card__icon'>
-            <Icon name='guage' />
+            <Icon name='gauge' />
           </div>
           <div className='card__body'>
             <h3>Detailed Records</h3>

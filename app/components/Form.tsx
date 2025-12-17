@@ -93,26 +93,25 @@ const Form = () => {
   return (
     <>
       <section className='form__wrapper'>
-        <div>
-          <div className='form'>
-            <form onSubmit={handleSubmit}>
-              <Input
-                label='Link to shorten'
-                placeholder='Shorten a link here...'
-                name='url'
-                value={url}
-                error={error}
-                onChange={handleChange}
-              />
-              <Button className='btn' type='submit' disabled={isLoading}>
-                {isLoading ? 'Shortening...' : 'Shorten It!'}
-              </Button>
-            </form>
-          </div>
+        <div className='form'>
+          <form onSubmit={handleSubmit}>
+            <Input
+              label='Link to shorten'
+              placeholder='Shorten a link here...'
+              name='url'
+              value={url}
+              error={error}
+              onChange={handleChange}
+            />
+            <Button className='btn' type='submit' disabled={isLoading}>
+              {isLoading ? 'Shortening...' : 'Shorten It!'}
+            </Button>
+          </form>
         </div>
       </section>
 
       <section
+        aria-hidden={!shortUrl}
         className={`results__wrapper ${shortUrl ? 'faded-in' : 'hidden'}`}>
         <div className={`results ${shortUrl ? 'fade-in' : 'hidden'}`}>
           <div className='results__header'>

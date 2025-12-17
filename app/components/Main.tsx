@@ -1,11 +1,9 @@
-import Cta from './Cta';
-import Form from './Form';
-import Stats from './Stats';
+import { Cta, Hero, Form, Stats } from '.';
 
 const Main = () => {
   return (
     <main>
-      {' '}
+      <Hero />
       <Form />
       <Stats />
       <Cta />

@@ -94,4 +94,10 @@
       left: var(--sp-32);
     }
   }
+
+  @include breakpoint(large) {
+    &__body {
+      text-align: left;
+    }
+  }
 }

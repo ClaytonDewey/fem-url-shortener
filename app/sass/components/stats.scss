@@ -4,11 +4,19 @@
   &__wrapper {
     background-color: var(--clr-purple-50);
     padding-block-end: rem(88);
+
+    @include breakpoint(medium) {
+      border-block-end: rem(80);
+    }
+
+    @include breakpoint(large) {
+      padding-block-end: rem(96);
+    }
   }
 
   &__header {
     text-align: center;
-    margin-bottom: var(--sp-56);
+    margin-block-end: var(--sp-56);
     padding-inline: var(--sp-24);
 
     h2 {
@@ -24,7 +32,7 @@
     @include breakpoint(medium) {
       max-width: rem(540);
       margin-inline: auto;
-      margin-bottom: var(--sp-40);
+      margin-block-end: var(--sp-40);
 
       h2 {
         font: var(--text-preset-2);

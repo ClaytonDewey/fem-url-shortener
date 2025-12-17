@@ -5,7 +5,7 @@
     padding-block: rem(75);
     padding-inline: rem(24);
     background-color: var(--clr-white);
-    background: var(--gradient);
+    background-image: var(--gradient);
 
     > div {
       max-width: rem(1110);
@@ -76,6 +76,10 @@
     padding: rem(56) rem(64) rem(50);
     height: rem(168);
 
+    &__wrapper {
+      padding-block-end: rem(93);
+    }
+
     form {
       @include flex-direction(row);
       gap: var(--sp-24);
@@ -88,11 +92,22 @@
 
     .btn {
       width: rem(188);
+      flex-shrink: 0;
+      font: var(--text-preset-5-bold);
     }
 
     &-control {
       border-radius: rem(10);
       font: var(--text-preset-5);
+      padding-inline: var(--sp-32);
+    }
+  }
+
+  @include breakpoint(large) {
+    &__wrapper {
+      padding-inline: rem(0);
+      padding-block-start: rem(72);
+      padding-block-end: rem(88);
     }
   }
 }
@@ -101,7 +116,7 @@
   &__wrapper {
     background-color: var(--clr-purple-50);
     padding-inline: rem(24);
-    padding-bottom: rem(88);
+    padding-block-end: rem(88);
     height: rem(243);
     transition: all 0.25s ease-in-out;
 
@@ -135,15 +150,15 @@
 
   &__header {
     border-bottom: 1px solid var(--clr-gray-500);
-    padding-bottom: rem(8);
-    margin-bottom: rem(8);
+    padding-block-end: rem(8);
+    margin-block-end: rem(8);
   }
 
   .link {
     display: inline-block;
     color: var(--clr-blue-400);
     text-decoration: none;
-    margin-bottom: rem(16);
+    margin-block-end: rem(16);
   }
 
   .btn {

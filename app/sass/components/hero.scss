@@ -73,10 +73,12 @@
   @include breakpoint(large) {
     @include flex-direction(row);
     padding-block-start: 0;
+    padding-inline: 0;
     height: rem(482);
+    overflow-x: visible;
 
     &::before {
-      left: rem(688);
+      left: rem(665);
     }
 
     &__body {

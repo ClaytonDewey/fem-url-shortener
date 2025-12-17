@@ -25,7 +25,7 @@ const Navbar = () => {
         <span className='icon-bar bottom-bar'></span>
       </Button>
       <div className={`navbar__wrapper ${isOpen ? 'open' : ''}`}>
-        <ul className='links'>
+        <ul className='links' aria-label='Main navigation links'>
           <li>
             <Link href='/'>Features</Link>
           </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link href='/'>Resources</Link>
           </li>
         </ul>
-        <ul className='account'>
+        <ul className='account' aria-label='Account links'>
           <li>
             <Link href='/'>Login</Link>
           </li>

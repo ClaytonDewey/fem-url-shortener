@@ -54,8 +54,8 @@
   --gradient: linear-gradient(
     0deg,
     rgba(239, 241, 247, 1) 0%,
-    rgba(239, 241, 247, 1) 50%,
-    rgba(255, 255, 255, 1) 50%,
+    rgba(239, 241, 247, 1) 50.75%,
+    rgba(255, 255, 255, 1) 50.75%,
     rgba(255, 255, 255, 1) 100%
   );
 
@@ -86,5 +86,11 @@
     var(--ff-primary);
 
   // Transition
-  --transition: all 0.3s ease-in-out;
+  @media (prefers-reduced-motion: no-preference) {
+    --transition: all 0.25s ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    --transition: none;
+  }
 }
