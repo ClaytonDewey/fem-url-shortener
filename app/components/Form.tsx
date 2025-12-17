@@ -17,6 +17,26 @@ const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
 
+  const normalizeUrl = (value: string): string | null => {
+    try {
+      const trimmed = value.trim();
+
+      const withProtocol = /^https?:\/\//i.test(trimmed)
+        ? trimmed
+        : `https://${trimmed}`;
+
+      const parsed = new URL(withProtocol);
+
+      if (!['http:', 'https:'].includes(parsed.protocol)) {
+        return null;
+      }
+
+      return parsed.toString();
+    } catch {
+      return null;
+    }
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUrl(e.target.value);
   };
@@ -24,11 +44,14 @@ const Form = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!url.trim()) {
+    const normalizedUrl = normalizeUrl(url);
+
+    if (!normalizedUrl) {
       setError('Please enter a valid URL.');
       return;
     }
 
+    setUrl(normalizedUrl);
     setIsLoading(true);
     setError(null);
     setShortUrl(null);
@@ -37,7 +60,7 @@ const Form = () => {
       const response = await fetch('/api/shorten', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url }),
+        body: JSON.stringify({ url: normalizedUrl }),
       });
 
       if (!response.ok) {
