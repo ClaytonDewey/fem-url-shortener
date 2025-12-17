@@ -10,7 +10,7 @@ import {
   IconTwitter,
 } from '.';
 
-const Icon = ({ name }) => {
+const Icon = ({ name }: { name: string }) => {
   switch (name) {
     case 'facebook':
       return <IconFacebook />;
