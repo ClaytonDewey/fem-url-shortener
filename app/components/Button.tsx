@@ -1,8 +1,6 @@
 import React from 'react';
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  expanded?: 'true' | 'false';
-};
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ type = 'button', ...props }: ButtonProps) => {
   return <button type={type} {...props} />;

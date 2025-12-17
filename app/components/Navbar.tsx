@@ -16,7 +16,7 @@ const Navbar = () => {
       <Button
         type='button'
         className={`navbar__toggle ${isOpen ? 'open' : ''}`}
-        expanded={isOpen ? 'true' : 'false'}
+        aria-expanded={isOpen ? 'true' : 'false'}
         aria-label='Toggle menu'
         onClick={handleClick}>
         <span className='sr-only'>Toggle menu</span>
