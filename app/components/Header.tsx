@@ -1,5 +1,5 @@
 import { Navbar } from '.';
-import { Icon } from '../svg';
+import { Icon } from '@/svg';
 
 const Header = () => {
   return (

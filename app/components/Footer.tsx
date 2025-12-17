@@ -1,4 +1,4 @@
-import { Icon } from '../svg';
+import { Icon } from '@/svg';
 import Link from 'next/link';
 
 const Footer = () => {
